@@ -4,11 +4,11 @@
 parameters:
     database_host:     127.0.0.1
     database_port:     ~
-    database_name:     symfony
+    database_name:     jukebox
     database_user:     root
     database_password: ~
     # You should uncomment this if you want use pdo_sqlite
-    # database_path: "%kernel.root_dir%/data.db3"
+    database_path: "%kernel.root_dir%/data.db3"
 
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
@@ -17,3 +17,6 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    # Location that mp3 music files will be kept
+    music_dir: %kernel.root_dir%/var/logs/music/
